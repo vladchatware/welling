@@ -1,8 +1,10 @@
-import { Link, Stack } from 'expo-router';
-import {View, Text, SafeAreaView} from 'react-native'
+import { ThemedText } from '@/components/ThemedText';
+import { ThemedView } from '@/components/ThemedView';
+import { Link } from 'expo-router';
 
-export default () => <SafeAreaView>
-  <Text>Introduction</Text>
-  <Link href="/Refferal">Reviews</Link>
-</SafeAreaView>
+export default () => <ThemedView style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+  <ThemedText type="title">Introduction</ThemedText>
+  <Link href="/Reviews"><ThemedText type="link">Reviews</ThemedText></Link>
+</ThemedView>
+
 
